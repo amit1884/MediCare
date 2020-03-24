@@ -2,13 +2,15 @@
 if(isset($_POST['submit']))
 {
     include_once 'dbh.inc.php';
+    $name = mysqli_real_escape_string($conn,$_POST['name']);
     $username = mysqli_real_escape_string($conn,$_POST['username']);
     $password = mysqli_real_escape_string($conn,$_POST['password']);
     $email = mysqli_real_escape_string($conn,$_POST['email']);
     $address = mysqli_real_escape_string($conn,$_POST['address']);
+    $pincode = mysqli_real_escape_string($conn,$_POST['pincode']);
     $timing = mysqli_real_escape_string($conn,$_POST['timings']);
     $cnumber = mysqli_real_escape_string($conn,$_POST['cnumber']);
-    if(empty($username)||empty($password)||empty($email)||empty($address)||empty($timing)||empty($cnumber))
+    if(empty($name)||empty($username)||empty($password)||empty($email)||empty($address)||empty($pincode)||empty($timing)||empty($cnumber))
     {
         header("Location: ../technicianlogin.php?signup=empty");
         exit();
@@ -38,7 +40,7 @@ if(isset($_POST['submit']))
               else
               {
                   $hashedpwd = password_hash($password,PASSWORD_DEFAULT);
-                  $sql= "INSERT INTO technician (username,password,email,location,cnumber,timings) VALUES ('$username','$hashedpwd','$email','$address','$cnumber','$timing');";
+                  $sql= "INSERT INTO technician (fullname,username,password,email,location,pincode,cnumber,timings) VALUES ('$name','$username','$hashedpwd','$email','$address','$pincode','$cnumber','$timing');";
                   $result=mysqli_query($conn,$sql);
                   header("Location: ../technicianlogin.php?signup=succes");
                   exit();

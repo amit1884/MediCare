@@ -92,14 +92,14 @@ h1 span {
                   
             <th>Name</th>
              <th>E-Mail</th>            
-              <th>Location</th>            
+              <th>Pincode</th>            
                <th>Contact</th>
                <th>Timing</th>
                 <th>Book</th>
         </tr>
         <?php
         
-        $sql="SELECT * FROM technician WHERE location= '".$_SESSION['address']."'";
+        $sql="SELECT * FROM technician WHERE pincode= '".$_SESSION['pin']."'";
         $result=mysqli_query($conn,$sql);
         $resultcheck=mysqli_num_rows($result);
         if($resultcheck<1)
@@ -109,9 +109,9 @@ h1 span {
         else{
             while($row=mysqli_fetch_assoc($result)){?>
 
-                <td><?php echo $row['username']?></td>
+                <td><?php echo $row['fullname']?></td>
                 <td><?php echo $row['email']?></td>
-                <td><?php echo $row['location']?></td>
+                <td><?php echo $row['pincode']?></td>
                 <td><?php echo $row['cnumber']?></td>
                 <td><?php echo $row['timings']?></td>
                 <td><form action ="book.php" method="post">

@@ -42,9 +42,9 @@
 .container2{
   /* border:1px solid #413e66; */
   width: 800px;
-  height: 500px;
+  height: 550px;
   position: absolute;
-  top:50%;
+  top:59%;
   left:50%;
   transform: translate(-50%, -50%);
   display: inline-flex; 
@@ -54,7 +54,7 @@
   border-radius:20px;
   background-image:url(images/banner3.jpg);
   width: 100%;
-  height: 80%;
+  height: 70%;
   position: absolute;
   transform: translate(0,-50%);
   top:50%;
@@ -114,18 +114,18 @@
 
 /* front box content*/
 .login, .signup{
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
 .login h2,
 .signup h2 {
   color: #35B729;
-  font-size:22px;
+  font-size:18px;
 }
 
 .inputbox{
-  margin-top:30px; 
+  margin-top:0; 
 }
 .login input, 
 .signup input {
@@ -135,8 +135,8 @@
   background-color: #f2f2f2;
   border: none;
   padding:15px;
-  margin-bottom:20px;
-  font-size: 15px;
+  margin-bottom:12px;
+  font-size: 12px;
 }
 
 .login button,
@@ -251,13 +251,15 @@ body{
         <h2>SIGN UP</h2>
         <form action="includes/technicianreg.inc.php" method ="post">
         <div class="inputbox">
+        <input type="text" name="name" placeholder="Your Name">
           <input type="text" name="username" placeholder="  Username">
-          <input type="text" name="email" placeholder="  E-mail">
-          <input type="password" name="password" placeholder="  Password">
-          <input type="text" name="address" placeholder="  Address">
-          <input type="text" name="timings" placeholder="  Timing">
-          <input type="number" name="cnumber" placeholder=" MobileNo.">
-        </div>
+          <input type="text" name="email" placeholder="E-mail">
+          <input type="password" name="password" placeholder="Password">
+          <input type="text" name="address" placeholder="Address">
+          <input type="number" name="pincode" placeholder="Pincode">
+          <input type="text" name="timings" placeholder="Timing">
+          <input type="number" name="cnumber" placeholder="MobileNo.">
+        </div><br><br>
         <button type ="submit" name ="submit" value ="login">SIGN UP</button>
         </form>
       </div>
