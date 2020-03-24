@@ -42,9 +42,9 @@
 .container2{
   /* border:1px solid #413e66; */
   width: 800px;
-  height: 500px;
+  height: 450px;
   position: absolute;
-  top:50%;
+  top:60%;
   left:50%;
   transform: translate(-50%, -50%);
   display: inline-flex; 
@@ -54,7 +54,7 @@
   border-radius:20px;
   background-image:url(images/banner3.jpg);
   width: 100%;
-  height: 80%;
+  height: 70%;
   position: absolute;
   transform: translate(0,-50%);
   top:50%;
@@ -114,7 +114,7 @@
 
 /* front box content*/
 .login, .signup{
-  padding: 20px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -125,7 +125,7 @@
 }
 
 .inputbox{
-  margin-top:30px; 
+  margin-top:40px; 
 }
 .login input, 
 .signup input {

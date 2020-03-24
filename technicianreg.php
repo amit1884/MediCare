@@ -54,13 +54,6 @@
         <br>
     </form>
 </div>
-<!-- Main Footer -->
-<footer class="main-footer">
-    <p>Developed & Maintained by
-        <a href="https://www.1000projects.com/" target="_blank">
-            <i class="fa fa-user-circle"></i> 1000 Projects
-        </a>
-    </p>
-</footer>
+
 </body>
 </html>

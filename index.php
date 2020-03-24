@@ -103,7 +103,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1 style ="color:#000;font-weight:500;">The Art of Teaching is the Art of Assisting Discovery</h1>
+							<h1 style ="color:#000;font-weight:400;">"Believe you can and you're halfway there."</h1>
 						</div>
 					</div>
 				</div>
@@ -341,7 +341,7 @@
 			<div class ="col-md-7 col-xs-12">
 			
 <div id="contactForm" class="contactForm">
-	<div id="formHeader" class="formHeader" style ="padding:10px;">
+	<div id="formHeader" class="formHeader" style ="padding:12px;">
 		<h1 id="message">Contact Me</h1>
 	</div>
 	<div id="formBody" class="formBody">
@@ -365,9 +365,12 @@
 		</form>
 	</div>
 </div>
+<!--icon scroll-->
+
 			</div>
 		</div>
 	</div>
+	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -387,7 +390,7 @@
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
+    
 	</body>
 </html>
 

@@ -168,8 +168,8 @@ table {
 th {
     height: 50px;
     background-color: #445511;
-    //color: white;
-}
+    color: white;
+ } 
 tr{
     font-family: Andalus,sans-serif;
     font-size: 20px;
