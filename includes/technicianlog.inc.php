@@ -26,13 +26,15 @@ if(isset($_POST['submit']))
                    $hashedPwdCheck = password_verify($pwd,$row['password']);
                    if($hashedPwdCheck==false)
                    {
-                    header("Location: ../technicianlogin?login=error!!!!!!!!!!");
+                    header("Location: ../technicianlogin?login=password_wrong");
                     exit(); 
                    }
                    else if($hashedPwdCheck ==true){
+                    $_SESSION['name']=$row['fullname'];
                             $_SESSION['user']=$row['username'];
                             $_SESSION['email']=$row['email'];
                             $_SESSION['address']=$row['location'];
+                            $_SESSION['pin']=$row['pincode'];
                             $_SESSION['cnumber']=$row['cnumber'];
                             header("Location: ../technicianhome.php?login=success");
                             exit(); 

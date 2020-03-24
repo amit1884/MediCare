@@ -42,9 +42,15 @@
 .container2{
   /* border:1px solid #413e66; */
   width: 800px;
+<<<<<<< HEAD
   height: 450px;
   position: absolute;
   top:60%;
+=======
+  height: 550px;
+  position: absolute;
+  top:59%;
+>>>>>>> 7fae7a005664efb681ae2c02c9a36c60403d2026
   left:50%;
   transform: translate(-50%, -50%);
   display: inline-flex; 
@@ -114,18 +120,26 @@
 
 /* front box content*/
 .login, .signup{
+<<<<<<< HEAD
   padding: 30px;
+=======
+  padding: 10px;
+>>>>>>> 7fae7a005664efb681ae2c02c9a36c60403d2026
   text-align: center;
 }
 
 .login h2,
 .signup h2 {
   color: #35B729;
-  font-size:22px;
+  font-size:18px;
 }
 
 .inputbox{
+<<<<<<< HEAD
   margin-top:40px; 
+=======
+  margin-top:0; 
+>>>>>>> 7fae7a005664efb681ae2c02c9a36c60403d2026
 }
 .login input, 
 .signup input {
@@ -135,8 +149,8 @@
   background-color: #f2f2f2;
   border: none;
   padding:15px;
-  margin-bottom:20px;
-  font-size: 15px;
+  margin-bottom:12px;
+  font-size: 12px;
 }
 
 .login button,
@@ -251,13 +265,15 @@ body{
         <h2>SIGN UP</h2>
         <form action="includes/technicianreg.inc.php" method ="post">
         <div class="inputbox">
+        <input type="text" name="name" placeholder="Your Name">
           <input type="text" name="username" placeholder="  Username">
-          <input type="text" name="email" placeholder="  E-mail">
-          <input type="password" name="password" placeholder="  Password">
-          <input type="text" name="address" placeholder="  Address">
-          <input type="text" name="timings" placeholder="  Timing">
-          <input type="number" name="cnumber" placeholder=" MobileNo.">
-        </div>
+          <input type="text" name="email" placeholder="E-mail">
+          <input type="password" name="password" placeholder="Password">
+          <input type="text" name="address" placeholder="Address">
+          <input type="number" name="pincode" placeholder="Pincode">
+          <input type="text" name="timings" placeholder="Timing">
+          <input type="number" name="cnumber" placeholder="MobileNo.">
+        </div><br><br>
         <button type ="submit" name ="submit" value ="login">SIGN UP</button>
         </form>
       </div>

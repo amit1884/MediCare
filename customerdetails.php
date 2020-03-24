@@ -114,7 +114,7 @@ h1 span {
             <tr>
                     <td><?php echo $row['cname']?></td>
                     <td><?php echo $row['types']?></td>
-                    <td><?php echo $row['location']?></td>
+                    <td><?php echo $row['pincode']?></td>
                     <td><?php echo $row['mobile']?></td>
                     <td><?php echo $row['date']?></td>
                     <td><form action ="adddetails.php" method ="POST">

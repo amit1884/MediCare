@@ -5,22 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Medicare|Healthcare Logistics</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="freehtml5.co" />
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
-	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -31,21 +16,21 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
-
 	<!-- Owl Carousel  -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/contact.css">
-
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<script src="js/contact.min.js"></script>
 	<style>
 		html{
 			scroll-behavior:smooth;
+		}
+		body,section{
+			overflow-x:hidden;
 		}
 		</style>
 	</head>
@@ -58,9 +43,9 @@
 					<div class="col-xs-12 text-right">
 						<p class="num" style ="color:#000">Call: +01 123 456 7890</p>
 						<ul class="fh5co-social">
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-							<li><a href="#"><i class="fa fa-github"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"style ="color:#000"></i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"style ="color:#000"></i></a></li>
+							<li><a href="#"><i class="fa fa-github"style ="color:#000"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -78,15 +63,6 @@
 							<li><a href="managerlogin.php" style ="color:#000">Manager</a></li>
 							<li><a href="technicianlogin.php" style ="color:#000">Technician</a></li>
 							<li><a href="customerlogin.php" style ="color:#000">Customer</a></li>
-							<!-- <li class="has-dropdown">
-								<a href="blog.html">Blog</a>
-								<ul class="dropdown">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Branding</a></li>
-									<li><a href="#">API</a></li>
-								</ul>
-							</li> -->
 							<li><a href="#contact" style ="color:#000">Contact Us</a></li>
 						</ul>
 					</div>
@@ -319,6 +295,7 @@
 		</div>
 	</div>
 
+<<<<<<< HEAD
 	<div id="fh5co-testimonial" id ="contact"class="fh5co-bg-section"style ="background-color:#f5f8fd;">
 		<div class ="container-fluid">
 			<div class ="row text-center">
@@ -371,6 +348,37 @@
 		</div>
 	</div>
 	
+=======
+	<div id="fh5co-testimonial" id ="contact"class="fh5co-bg-section"style ="background-image:url(images/banner8.jpg);background-attachment:fixed;background-size:cover;background-repeat:no-repeat;">
+	<div class ="container-fluid">
+         <div class ="row">
+             <div class= "col-12">
+                <div class ="row">
+                  <div class="col-md-6 col-xs-12 text-center"><br><br><br>
+                    <img src ="images\newlogo.png"><br>
+                    <h3>Medicare | A Step Towards Healthy India</h3>
+                    <i class ="fa fa-facebook"style ="font-size:35px;color:dodgerblue"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class ="fa fa-twitter"style ="font-size:35px;color:dodgerblue"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class ="fa fa-instagram"style ="font-size:30px;color:dodgerblue"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+                    <div class ="con_text"><h2>Contact Us &nbsp;&nbsp;&nbsp;<i class ="fa fa-arrow-right"></i></h2></div>
+                  </div>
+                  <div class="col-md-5 col-xs-12">
+                    <form method="POST" action="inlcudes/contact.inc.php">
+                      <div class="form-group"><input style ="border:1px solid #000;"class="form-control" type="text" name="name" placeholder="Name"
+                          required></div>
+                      <div class ="form-group"><input style ="border:1px solid #000;"class= "form-control" type ="text"name ="email" placeholder ="Email" required></div>
+                      <div class ="form-group"><input style ="border:1px solid #000;"class= "form-control" type ="text"name ="subject" placeholder ="Subject" required></div>
+                      <div class ="form-group"><textarea style ="border:1px solid #000;"class= "form-control" type ="text"name ="message" placeholder ="Message" style ="min-height:200px;" required></textarea></div>
+                      <div class="form-group text-center" id="sbtn"><button class="btn btn-lg btn-primary btn-block"style="width:30%;">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+             </div>
+         </div>
+     </div>
+</div>
+>>>>>>> 7fae7a005664efb681ae2c02c9a36c60403d2026
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
