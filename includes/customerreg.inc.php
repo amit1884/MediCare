@@ -2,12 +2,14 @@
 if(isset($_POST['submit']))
 {
     include_once 'dbh.inc.php';
+    $name = mysqli_real_escape_string($conn,$_POST['name']);
     $username = mysqli_real_escape_string($conn,$_POST['username']);
     $password = mysqli_real_escape_string($conn,$_POST['password']);
     $email = mysqli_real_escape_string($conn,$_POST['email']);
     $address = mysqli_real_escape_string($conn,$_POST['address']);
+    $pincode = mysqli_real_escape_string($conn,$_POST['pincode']);
     $cnumber = mysqli_real_escape_string($conn,$_POST['cnumber']);
-    if(empty($username)||empty($password)||empty($email)||empty($address)||empty($cnumber))
+    if(empty($username)||empty($name)||empty($pincode)||empty($password)||empty($email)||empty($address)||empty($cnumber))
     {
         header("Location: ../customerlogin.php?signup=empty");
         exit();
@@ -37,7 +39,7 @@ if(isset($_POST['submit']))
               else
               {
                   $hashedpwd = password_hash($password,PASSWORD_DEFAULT);
-                  $sql= "INSERT INTO customer (username,password,email,location,cnumber) VALUES ('$username','$hashedpwd','$email','$address','$cnumber');";
+                  $sql= "INSERT INTO customer (fullname,username,password,email,location,pincode,cnumber) VALUES ('$name','$username','$hashedpwd','$email','$address','$pincode','$cnumber');";
                   $result=mysqli_query($conn,$sql);
                   header("Location: ../customerlogin.php?signup=succes");
                   exit();

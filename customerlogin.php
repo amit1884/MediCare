@@ -42,9 +42,9 @@
 .container2{
   /* border:1px solid #413e66; */
   width: 800px;
-  height: 500px;
+  height: 600px;
   position: absolute;
-  top:50%;
+  top:55%;
   left:50%;
   transform: translate(-50%, -50%);
   display: inline-flex; 
@@ -127,11 +127,11 @@
 .login h2,
 .signup h2 {
   color: #35B729;
-  font-size:22px;
+  font-size:20px;
 }
 
 .inputbox{
-  margin-top:30px; 
+  margin-top:10px; 
 }
 .login input, 
 .signup input {
@@ -257,11 +257,12 @@ body{
         <h2>SIGN UP</h2>
         <form action="includes/customerreg.inc.php" method ="post">
         <div class="inputbox">
+        <input type="text" name="name" placeholder="  Your Name">
           <input type="text" name="username" placeholder="  Username">
           <input type="text" name="email" placeholder="  E-mail">
-          <input type="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Enter Valid Password" placeholder="  Password">
+          <input type="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"  minlength="10"title="Enter Valid Password" placeholder="  Password">
           <input type="text" name="address" placeholder="  Address">
-          <input type="text" name="timings" placeholder="  Timing">
+          <input type="text" name="pincode" placeholder="  Pincode">
           <input type="number" name="cnumber"pattern="[789][0-9]{9}" title="Indian Number Only(Max 10 Digit)" placeholder=" MobileNo.">
         </div>
         <button type ="submit" name ="submit" value ="login">SIGN UP</button>

@@ -19,7 +19,7 @@ include_once 'customerheader.php';
             <form action="includes/bookact.inc.php" method="post">
         <input type="text" class ="form-control"placeholder="Name" readonly="" value="<?php echo $row['username']?>" name="tname" required="" autocomplete="off">
         <br>
-        <input type="text" class ="form-control"placeholder="Location" readonly="" value="<?php echo $row['location']?>" name="location" required="" autocomplete="off">
+        <input type="text" class ="form-control"placeholder="Pin" readonly="" value="<?php echo $row['pincode']?>" name="pincode" required="" autocomplete="off">
         <br>
         <select  class ="form-control"name="types" required="">
             <option style="color: white">Select</option>
