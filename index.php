@@ -116,9 +116,12 @@
 				<div class="row">
 					<div class="col-md-8 col-md-push-5 animate-box">
 						<!-- <img class="img-responsive" src="img\bg.jpg" alt="work"> -->
-						<video autoplay muted controls width="700" loop >
-						<source src ="video\Iron Man Armoured Adventures theme song.mp4">
-						</video>
+						<iframe width="700" height="400" 
+						src="https://www.youtube.com/embed/21s8-SMOSTY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						</iframe>
+						<!-- <iframe width="500" height="315"
+						src="https://youtu.be/21s8-SMOSTY">
+						</iframe> -->
 					</div>
 					<div class="col-md-4 col-md-pull-8 animate-box">
 						<div class="mt">
@@ -133,9 +136,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-pull-1 animate-box">
-					<video autoplay muted controls width="700" loop >
-						<source src ="video\Mighty Cat Masked Niyander Hindi Opening _ Mighty Cat Masked Niyander Hindi Intr.mp4">
-						</video>
+					<iframe width="700" height="400" 
+						src="https://www.youtube.com/embed/21s8-SMOSTY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						</iframe>
 					</div>
 					<div class="col-md-4 animate-box">
 						<div class="mt">
