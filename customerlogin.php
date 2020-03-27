@@ -5,19 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Medicare|Healthcare Logistics</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="freehtml5.co" />
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -42,7 +29,7 @@
 .container2{
   /* border:1px solid #413e66; */
   width: 800px;
-  height: 600px;
+  height: 550px;
   position: absolute;
   top:55%;
   left:50%;
@@ -65,6 +52,7 @@
 .frontbox{
   background-color: white;
   border:1px solid dodgerblue;
+  /* overflow-y:scroll; */
   border-radius: 20px;
   height: 100%;
   width: 50%;
@@ -131,7 +119,7 @@
 }
 
 .inputbox{
-  margin-top:10px; 
+  margin-top:7px; 
 }
 .login input, 
 .signup input {
@@ -141,7 +129,7 @@
   background-color: #f2f2f2;
   border: none;
   padding:15px;
-  margin-bottom:20px;
+  margin-bottom:15px;
   font-size: 15px;
 }
 

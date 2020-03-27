@@ -108,7 +108,7 @@ h1 span {
         <?php }
         else{
             while($row=mysqli_fetch_assoc($result)){?>
-
+                <tr>
                 <td><?php echo $row['fullname']?></td>
                 <td><?php echo $row['email']?></td>
                 <td><?php echo $row['pincode']?></td>
@@ -119,6 +119,7 @@ h1 span {
                     <button type ="submit" name ="submit" value ="<?php echo $row['username']?>" class ="btn btn-primary">
                 Book</button></center>
                 </form></td>
+                </tr>
            <?php }
         }
         ?>

@@ -294,8 +294,8 @@
 			</div>
 		</div>
 	</div>
-
-	<div id="fh5co-testimonial" id ="contact"class="fh5co-bg-section"style ="background-image:url(images/banner8.jpg);background-attachment:fixed;background-size:cover;background-repeat:no-repeat;">
+<section id ="contact">
+	<div id="fh5co-testimonial"class="fh5co-bg-section"style ="background-image:url(images/banner8.jpg);background-attachment:fixed;background-size:cover;background-repeat:no-repeat;">
 	<div class ="container-fluid">
          <div class ="row">
              <div class= "col-12">
@@ -309,13 +309,13 @@
                     <div class ="con_text"><h2>Contact Us &nbsp;&nbsp;&nbsp;<i class ="fa fa-arrow-right"></i></h2></div>
                   </div>
                   <div class="col-md-5 col-xs-12">
-                    <form method="POST" action="inlcudes/contact.inc.php">
+                    <form method="POST" action="includes/contact.inc.php">
                       <div class="form-group"><input style ="border:1px solid #000;"class="form-control" type="text" name="name" placeholder="Name"
                           required></div>
                       <div class ="form-group"><input style ="border:1px solid #000;"class= "form-control" type ="text"name ="email" placeholder ="Email" required></div>
                       <div class ="form-group"><input style ="border:1px solid #000;"class= "form-control" type ="text"name ="subject" placeholder ="Subject" required></div>
                       <div class ="form-group"><textarea style ="border:1px solid #000;"class= "form-control" type ="text"name ="message" placeholder ="Message" style ="min-height:200px;" required></textarea></div>
-                      <div class="form-group text-center" id="sbtn"><button class="btn btn-lg btn-primary btn-block"style="width:30%;">Submit</button>
+                      <div class="form-group text-center" id="sbtn"><button class="btn btn-lg btn-primary btn-block"style="width:30%;" name ="submit">Submit</button>
                       </div>
                     </form>
                   </div>
@@ -324,6 +324,7 @@
          </div>
      </div>
 </div>
+</section>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->

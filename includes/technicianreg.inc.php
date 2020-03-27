@@ -17,7 +17,7 @@ if(isset($_POST['submit']))
     }
     else
     {
-        if(!preg_match("/^[a-zA-Z]*$/",$address))
+        if(!preg_match("/^[a-zA-Z ]*$/",$address))
         {
             header("Location: ../technicianlogin.php?signup=invalid");
             exit();
