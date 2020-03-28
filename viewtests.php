@@ -100,6 +100,7 @@ h1 span {
 <tr>
 <th><center>Sr. No.</center></th>
 <th><center>Name of Tests</center></th>
+<th><center>Price</center></th>
 </tr>
 <?php
 $i=1;
@@ -117,6 +118,7 @@ else{
     <tr>
     <td><?php echo $i?></td>
     <td><?php echo $row['name']?></td>
+    <td><?php echo $row['Price']?></td>
     </tr>
 <?php
 $i++;
