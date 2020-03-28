@@ -4,6 +4,8 @@ include_once 'dbh.inc.php';
 if(isset($_POST['submit'])){
  
     $eqname=mysqli_real_escape_string($conn,$_POST['name']);
+    $eqqty=mysqli_real_escape_string($conn,$_POST['qty']);
+    $eqprice=mysqli_real_escape_string($conn,$_POST['price']);
   $name = $_FILES['image']['name'];
   $target_dir = "../upload/";
   $target_file = $target_dir . basename($_FILES["image"]["name"]);
@@ -18,7 +20,7 @@ if(isset($_POST['submit'])){
   if( in_array($imageFileType,$extensions_arr) ){
  
      // Insert record
-     $query = "insert into equipments(name,image) values('".$eqname."','".$name."')";
+     $query = "insert into equipments(name,image,Quantity,Price) values('".$eqname."','".$name."','".$eqqty."','".$eqprice."')";
      mysqli_query($conn,$query);
   
      // Upload file

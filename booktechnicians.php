@@ -115,9 +115,16 @@ h1 span {
                 <td><?php echo $row['cnumber']?></td>
                 <td><?php echo $row['timings']?></td>
                 <td><form action ="book.php" method="post">
+                <?php if($row['flag']==0){?>
                 <center>
-                    <button type ="submit" name ="submit" value ="<?php echo $row['username']?>" class ="btn btn-primary">
-                Book</button></center>
+                <button type ="submit" name ="submit" value ="<?php echo $row['username']?>" class ="btn btn-primary">
+                Book</button>
+                </center>
+                <?php } else{?>
+                  <center>
+                <button type ="submit" name ="submit" value ="<?php echo $row['username']?>" class ="btn btn-primary" disabled>
+                Unavailable</button>
+                <?php }?>
                 </form></td>
                 </tr>
            <?php }

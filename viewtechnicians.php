@@ -96,6 +96,7 @@ h1 span {
 <th><center>Location</center></th>
 <th><center>Number</center></th>
 <th><center>Timing</center></th>
+<th><center>Status</center></th>
 </tr>
 <?php 
 $i=1;
@@ -117,6 +118,11 @@ else{
         <td><?php echo $row['location']?></td>
         <td><?php echo $row['cnumber']?></td>
         <td><?php echo $row['timings']?></td>
+        <?php if($row['flag']==0){?>
+          <td style ="color:green;">Available</td>
+          <?php } else{?>
+            <td style ="color:red;">Unavailable</td>
+          <?php } ?>
     </tr>
 <?php
 $i++;
