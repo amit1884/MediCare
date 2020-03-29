@@ -96,8 +96,10 @@ h1 span {
 <center><table class ="responstable">
 <tr>
 <th><center>Sr.No</center></th>
+<th><center>Name</center></th>
 <th><center>Email</center></th>
 <th><center>Location</center></th>
+<th><center>Pincode</center></th>
 <th><center>MobileNo.</center></th>
 </tr>
 
@@ -116,8 +118,10 @@ else{
 
     <tr>
     <td><?php echo $i?></td>
+    <td><?php echo $row['fullname']?></td>
     <td><?php echo $row['email']?></td>
     <td><?php echo $row['location']?></td>
+    <td><?php echo $row['pincode']?></td>
     <td><?php echo $row['cnumber']?></td>
     </tr>
 <?php

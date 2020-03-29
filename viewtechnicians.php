@@ -92,8 +92,10 @@ h1 span {
 <center><table class ="responstable">
 <tr>
 <th><center>SrNo.</center></th>
+<th><center>Name</center></th>
 <th><center>Email</center></th>
 <th><center>Location</center></th>
+<th><center>PinCode</center></th>
 <th><center>Number</center></th>
 <th><center>Timing</center></th>
 <th><center>Status</center></th>
@@ -114,8 +116,10 @@ else{
     while($row=mysqli_fetch_assoc($result)){?>
     <tr>
         <td><?php echo $i?></td>
+        <td><?php echo $row['fullname']?></td>
         <td><?php echo $row['email']?></td>
         <td><?php echo $row['location']?></td>
+        <td><?php echo $row['pincode']?></td>
         <td><?php echo $row['cnumber']?></td>
         <td><?php echo $row['timings']?></td>
         <?php if($row['flag']==0){?>
