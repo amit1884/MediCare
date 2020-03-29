@@ -42,9 +42,15 @@
 .container2{
   /* border:1px solid #413e66; */
   width: 800px;
+<<<<<<< HEAD
+  height: 450px;
+  position: absolute;
+  top:60%;
+=======
   height: 550px;
   position: absolute;
   top:59%;
+>>>>>>> 7fae7a005664efb681ae2c02c9a36c60403d2026
   left:50%;
   transform: translate(-50%, -50%);
   display: inline-flex; 
@@ -114,7 +120,11 @@
 
 /* front box content*/
 .login, .signup{
+<<<<<<< HEAD
+  padding: 30px;
+=======
   padding: 10px;
+>>>>>>> 7fae7a005664efb681ae2c02c9a36c60403d2026
   text-align: center;
 }
 
@@ -125,7 +135,11 @@
 }
 
 .inputbox{
+<<<<<<< HEAD
+  margin-top:40px; 
+=======
   margin-top:0; 
+>>>>>>> 7fae7a005664efb681ae2c02c9a36c60403d2026
 }
 .login input, 
 .signup input {

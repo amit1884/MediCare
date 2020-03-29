@@ -28,7 +28,7 @@ if(!$_SESSION['user']){
 	<link rel="stylesheet" href="css/pstyle.css"/>
 	<style>
     body{
-        background-image:url(images/manager.jpg);
+        background-image:url(images/mg2.jpg);
         /* background-position:center; */
         background-size:cover;
         background-repeat:no-repeat;

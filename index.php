@@ -79,7 +79,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1 style ="color:#000;font-weight:500;">The Art of Teaching is the Art of Assisting Discovery</h1>
+							<h1 style ="color:#000;font-weight:400;">"Believe you can and you're halfway there."</h1>
 						</div>
 					</div>
 				</div>
@@ -347,7 +347,7 @@
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
+    
 	</body>
 </html>
 
